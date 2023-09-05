@@ -1,15 +1,20 @@
 import React from 'react';
-// Using React.createElement to create an element
-const element = React.createElement('h1', null, 'Hello World');
+import { DataFetcher } from './components/DataFetcher';
+import { FunFactExampleQ4 } from './components/FunFactExampleQ4';
+import Question1 from "../Level1/question1";
 
-const Question1 = () => {
+function Question4() {
     return (
-        <div>
-            <h1>Level X - Question X</h1>
-            {/* Rendering the created element */}
-            {element}
+        <div className="p-4">
+            <h1 className="text-2xl font-bold mb-4">Level 2 - Question 4</h1>
+            <DataFetcher />
+            <div className="mt-4 bg-yellow-200 p-4 rounded-md">
+                <h2 className="text-lg font-bold">Fun Fact:</h2>
+                <p>The empty dependency array in <code>useEffect</code> ensures the fetch runs only once, similar to <code>componentDidMount</code> in class components.</p>
+            </div>
+            <FunFactExampleQ4 />
         </div>
     );
-};
+}
 
-export default Question1;
+export default Question4;
