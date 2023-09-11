@@ -1,15 +1,17 @@
-import React from 'react';
-// Using React.createElement to create an element
-const element = React.createElement('h1', null, 'Hello World');
+import React, { createContext, useEffect } from 'react';
+import { EventEmitter } from 'events'; // Ensure to install events package
+import Child from './components/Child'; // Adjust the path to your Child component
 
-const Question1 = () => {
+export const EventContext = createContext();
+
+function Question2() {
+    const emitter = new EventEmitter();
+
     return (
-        <div>
-            <h1>Level X - Question X</h1>
-            {/* Rendering the created element */}
-            {element}
-        </div>
+        <EventContext.Provider value={emitter}>
+            <Child />
+        </EventContext.Provider>
     );
-};
+}
 
-export default Question1;
+export default Question2;

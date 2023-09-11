@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import * as Level1Questions from './Level1';
 import * as Level2Questions from './Level2';
 import * as Level3Questions from './Level3';
+import * as Level4Questions from './Level4';
 
 function App() {
   const [openLevel, setOpenLevel] = useState(null);
@@ -23,7 +24,7 @@ function App() {
     1: Object.values(Level1Questions),
     2: Object.values(Level2Questions),
     3: Object.values(Level3Questions),
-    4:[],
+    4: Object.values(Level4Questions),
     5:[],
     6:[],
   };
