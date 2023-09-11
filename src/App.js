@@ -5,6 +5,7 @@ import * as Level2Questions from './Level2';
 import * as Level3Questions from './Level3';
 import * as Level4Questions from './Level4';
 import * as Level5Questions from './Level5';
+import * as Level6Questions from './Level6';
 
 function App() {
   const [openLevel, setOpenLevel] = useState(null);
@@ -27,7 +28,7 @@ function App() {
     3: Object.values(Level3Questions),
     4: Object.values(Level4Questions),
     5: Object.values(Level5Questions),
-    6:[],
+    6: Object.values(Level6Questions),
   };
 
   return (

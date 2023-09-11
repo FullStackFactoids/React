@@ -1,7 +1,7 @@
 export { default as L6_Q1 } from './question1';
 export { default as L6_Q2} from './question2';
 export { default as L6_Q3 } from './question3';
-export { default as L6_Q4} from './question4';
+// export { default as L6_Q4} from './question4';
 // export { default as L6_Q5 } from './question5';
 // export { default as L6_Q6} from './question6';
 // export { default as L6_Q7 } from './question7';
