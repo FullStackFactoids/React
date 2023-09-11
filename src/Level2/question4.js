@@ -1,7 +1,6 @@
 import React from 'react';
 import { DataFetcher } from './components/DataFetcher';
 import { FunFactExampleQ4 } from './components/FunFactExampleQ4';
-import Question1 from "../Level1/question1";
 
 function Question4() {
     return (

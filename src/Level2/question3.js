@@ -1,7 +1,6 @@
 import React from 'react';
 import {ThemeContext} from './components/ThemeContext';
 import {ThemedButton} from './components/ThemedButton';
-import Question1 from "../Level1/question1";
 
 function NestedComponent() {
     return (

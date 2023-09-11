@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { EventContext } from '../question2'; // Adjust the path to your Parent component
+import { EventContext } from '../question2';
 
 function Child() {
     const emitter = useContext(EventContext);

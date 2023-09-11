@@ -1,6 +1,5 @@
 import React from 'react';
 import { CounterComponent } from './components/CounterComponent';
-import Question1 from "../Level1/question1";
 
  function Question2() {
     return (

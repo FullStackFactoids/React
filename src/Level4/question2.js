@@ -1,6 +1,6 @@
-import React, { createContext, useEffect } from 'react';
-import { EventEmitter } from 'events'; // Ensure to install events package
-import Child from './components/Child'; // Adjust the path to your Child component
+import React, { createContext } from 'react';
+import { EventEmitter } from 'events';
+import Child from './components/Child';
 
 export const EventContext = createContext();
 
