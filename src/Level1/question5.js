@@ -4,7 +4,7 @@ function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
 }
 
-export default function Question5() {
+function Question5() {
     return (
         <div className="p-4 bg-white rounded-md">
             <h1 className="text-2xl font-bold mb-4">5. How do you pass data to a React component?</h1>
@@ -18,10 +18,13 @@ export default function Question5() {
 
             <div className="bg-yellow-100 p-4 rounded-md">
                 <h2 className="text-xl font-semibold mb-2">Fun Fact:</h2>
-                <p>Props are read-only.</p>
+                <p>Modifying props inside a component will not throw an error; however, it is considered bad practice because props are meant to be read-only. </p>
                 {/* Uncomment the line below to see the error in the console */}
                 {/* <Welcome name={props => props.name = "Jane"} /> */}
             </div>
         </div>
     );
 }
+
+export default Question5;
+

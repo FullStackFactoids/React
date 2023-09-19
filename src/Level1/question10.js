@@ -1,7 +1,7 @@
 import React from 'react';
-import VirtualDOMExample from './components/VirtualDOMExample';  // Import VirtualDOMExample from components folder
+import VirtualDOMExample from './components/VirtualDOMExample';
 
-export default function Question10() {
+ function Question10() {
     return (
         <div className="p-4 bg-white rounded-md">
             <h1 className="text-2xl font-bold mb-4">10. What is the virtual DOM?</h1>
@@ -18,3 +18,5 @@ export default function Question10() {
         </div>
     );
 }
+export default Question10;
+

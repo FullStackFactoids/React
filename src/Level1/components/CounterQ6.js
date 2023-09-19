@@ -8,7 +8,11 @@ class Counter extends Component {
 
     render() {
         return (
-            <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+            <button onClick={() => this.setState(
+                // When state changes, the component re-renders
+                { count: this.state.count + 1 })
+                // The component will re-render with the updated count
+            }>
                 {this.state.count}
             </button>
         );

@@ -1,7 +1,7 @@
 import React from 'react';
-import Counter from './components/CounterQ6';  // Import Counter from components folder
+import Counter from './components/CounterQ6';
 
-export default function Question6() {
+ function Question6() {
     return (
         <div className="p-4 bg-white rounded-md">
             <h1 className="text-2xl font-bold mb-4">6. What is the state in React?</h1>
@@ -20,3 +20,5 @@ export default function Question6() {
         </div>
     );
 }
+export default Question6;
+
