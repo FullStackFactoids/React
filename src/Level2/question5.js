@@ -1,15 +1,30 @@
 import React from 'react';
-// Using React.createElement to create an element
-const element = React.createElement('h1', null, 'Hello World');
+import DataContext from './components/DataContext';
+import Grandchild from './components/Grandchild';
+import Parent from './components/Parent';
 
-const Question1 = () => {
+const Question5 = () => {
     return (
-        <div>
-            <h1>Level X - Question X</h1>
-            {/* Rendering the created element */}
-            {element}
+        <div className="p-4">
+            <h1 className="text-2xl font-bold mb-4">Level 2 - Question 5</h1>
+            {/* Demonstrating prop drilling */}
+            <div className="mb-6">
+                <h2 className="text-xl font-semibold mb-2">Prop Drilling:</h2>
+                <div className="p-4 border rounded shadow-md bg-white">
+                    <Parent data="Prop Drilled Data" />
+                </div>
+            </div>
+            {/* Demonstrating using Context API to avoid prop drilling */}
+            <div className="mb-6">
+                <h2 className="text-xl font-semibold mb-2">Fun Fact - Using Context API:</h2>
+                <div className="p-4 border rounded shadow-md bg-green-100">
+                    <DataContext.Provider value="Data from Context">
+                        <Grandchild />
+                    </DataContext.Provider>
+                </div>
+            </div>
         </div>
     );
 };
 
-export default Question1;
+export default Question5;

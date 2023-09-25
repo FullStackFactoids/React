@@ -1,15 +1,15 @@
 import React from 'react';
-// Using React.createElement to create an element
-const element = React.createElement('h1', null, 'Hello World');
+import Form from './components/Form';
+import OneWayDataFlowExample from './components/OneWayDataFlowExample';
 
-const Question1 = () => {
+const Question7 = () => {
     return (
-        <div>
-            <h1>Level X - Question X</h1>
-            {/* Rendering the created element */}
-            {element}
+        <div className="space-y-4">
+            <h1 className="text-2xl font-semibold">Level 2 - Question 7</h1>
+            <Form />
+            <OneWayDataFlowExample />
         </div>
     );
 };
 
-export default Question1;
+export default Question7;

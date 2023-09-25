@@ -1,15 +1,15 @@
 import React from 'react';
-// Using React.createElement to create an element
-const element = React.createElement('h1', null, 'Hello World');
+import CounterComponentQ9 from './components/CounterComponentQ9';
+import InputRefComponent from './components/InputRefComponent';
 
-const Question1 = () => {
+const Question9 = () => {
     return (
-        <div>
-            <h1>Level X - Question X</h1>
-            {/* Rendering the created element */}
-            {element}
+        <div className="p-4">
+            <h1 className="text-2xl font-bold mb-4">Level 2 - Question 9</h1>
+            <CounterComponentQ9 />
+            <InputRefComponent />
         </div>
     );
 };
 
-export default Question1;
+export default Question9;
